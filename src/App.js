@@ -15,7 +15,7 @@ class App extends Component {
     answers: [],
     score: 0,
     topScore: 0,
-    message: "Click an image to get started"
+    message: "Click a Hero to get started"
   };
 
   
@@ -27,25 +27,41 @@ class App extends Component {
     this.imageShuffle();
   }
   
-  imageClick = (id, name) => {
-    this.imageShuffle();
-    this.setState({score: this.state.score + 1})
+  imageClick = (id) => {
+    
+    let answersArray = this.state.answers;
+    
+    if(answersArray.indexOf(id) === -1){
+      answersArray.push(id);
+      console.log(answersArray);
+      this.setState({score: this.state.score +1})
+      console.log(this.state.score)
+      this.imageShuffle()
+      } else {
+      this.setState({
+        score: 0,
+        message: "Sorry, you lost",
+        answersArray: [] 
+      })
+      if(this.state.score > this.state.topScore){
+        this.setState({
+          topScore: this.state.score
+        });
 
-    console.log(`this worked `)
-    console.log(`you clicked on ${name}`)
-    console.log(`${name} has an id of ${id}`)
+      }
+    }
+    
   }
 
-  
 
 
-  
+    
 
   render() {
     return (
 
       <div>
-        <Navbar> The Marvel Universe. Your score is {this.state.score} || Top Score: {this.state.topScore} </Navbar>
+        <Navbar> score={this.state.score} || topScore={this.state.topScore} </Navbar>
           <Container>
             <Heading />
             <Row>
@@ -57,7 +73,7 @@ class App extends Component {
                     key={hero.id}
                     name={hero.name}
                     image={hero.image}
-                    onClick={() => this.imageClick}
+                    imageClick={this.imageClick}
                   />
                 </Col>
               ))}
