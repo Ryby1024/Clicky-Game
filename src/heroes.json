@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Collector",
+        "image": "./images/collector.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Deadpool",
+        "image": "./images/deadpool.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Groot",
+        "image": "./images/groot.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Hulk",
+        "image": "./images/hulk.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ironman",
+        "image": "./images/ironman.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Nebula",
+        "image": "./images/nebula.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Silver Surfer",
+        "image": "./images/silver.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Starlord",
+        "image": "./images/starlord.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Strom",
+        "image": "./images/storm.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Thanos",
+        "image": "./images/thanos.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Thing",
+        "image": "./images/thing.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Wolverine",
+        "image": "./images/wolverine.jpg"
+    }
+]
