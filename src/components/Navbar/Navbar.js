@@ -1,15 +1,10 @@
 import React from "react";
+import "./style.css";
 
 const Navbar = (props) => {
     return (
-        <nav className="navbar bg-primary navbar-expand-lg sticky-top">
-            Clicky Game
-
-            <ul className="ml-auto">
-            Score: {props.score} | 
-            
-            Top Score: {props.topScore}
-            </ul>
+        <nav className="navbar bg-danger navbar-expand-lg">
+           <h1>Marvel Clicky Game</h1>
         </nav>
     )
 }

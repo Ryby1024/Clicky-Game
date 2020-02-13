@@ -5,7 +5,8 @@ import Card from "./components/HeroesCard/Card";
 import Container from "./components/Container/Container";
 import Row from "./components/Row/Row";
 import Col from "./components/Col/Col";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
+import Title from "./components/Title/Title";
 import heroes from "./heroes.json";
 
 
@@ -54,6 +55,7 @@ class App extends Component {
             score: this.state.score + 1,
             topScore: this.state.score + 1 > this.state.topScore ? this.state.score + 1 : this.state.topScore
           });
+          console.log(this.state.score)
       }
     })
 
@@ -77,9 +79,10 @@ class App extends Component {
     return (
 
       <Container>
-        <Navbar> The Marvel Heroes- {this.state.message} score={this.state.score} || topScore={this.state.topScore} </Navbar>
+        <Navbar> The Marvel Heroes clicky game  </Navbar>
         
-          <Heading />
+          <Heading>  Score: {this.state.score} | Top Score: {this.state.topScore}</Heading>
+          <Title>{this.state.message}</Title>
           <Row>
 
             {this.state.heroes.map(hero => (
