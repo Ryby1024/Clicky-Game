@@ -1,6 +1,10 @@
-.jumbotron {
+.jumbotron-fluid {
     background-color: black;
     color: white;
     text-align: center;
     font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 30px;
 }

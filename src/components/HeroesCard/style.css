@@ -1,5 +1,5 @@
 .card {
-    background-image: linear-gradient(rgb(238, 74, 74), black, blue);
+    background-color: blue;
     margin: 5px;
 }
 img  {
