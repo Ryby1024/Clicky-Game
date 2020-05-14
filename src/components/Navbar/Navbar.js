@@ -3,7 +3,7 @@ import "./style.css";
 
 const Navbar = (props) => {
     return (
-        <nav className="navbar bg-primary navbar-expand-lg">
+        <nav id="navbar"className="navbar navbar-expand-lg">
            <h1>Marvel Clicky Game</h1>
         </nav>
     )
